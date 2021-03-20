@@ -84,6 +84,8 @@ const Login = () => {
           e.preventDefault();
     };
    
+    console.log(loggedInUser);
+
     return (
         <div className="container mt-4">
             <div className="row justify-content-center">
