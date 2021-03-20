@@ -7,8 +7,8 @@ const filteredData = fakeData.filter(data => data.code);
 const Home = () => {
 
     return (
-        <div className='justify-content-center align-items-center d-flex' style={{height:'500px'}}>
-            <div className="container row m-auto">
+        <div className='justify-content-center align-items-center d-flex' style={{height:'500px', background: 'antiquewhite'}}>
+            <div className="container row m-auto ">
                 {
                     filteredData.map(data => <HomeContent key={data.price} data={data} />)
                 }
