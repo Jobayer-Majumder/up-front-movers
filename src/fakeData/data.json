@@ -1,6 +1,7 @@
 [
     {
         "id" : 1,
+        "code": "B",
         "name": "Bike",
         "seat": 1,
         "price": "20",
@@ -10,16 +11,19 @@
         "id" : 1,
         "name": "Bike",
         "seat": 1,
-        "price": "25"
+        "price": "25",
+        "img": "https://i.ibb.co/gdfp92k/Frame.png"
     },
     {
         "id" : 1,
         "name": "Bike",
         "seat": 1,
-        "price": "30"
+        "price": "30",
+        "img": "https://i.ibb.co/gdfp92k/Frame.png"
     },
     {
         "id" : 2,
+        "code": "C",
         "name": "Car",
         "seat": 4,
         "price": "50",
@@ -29,16 +33,21 @@
         "id" : 2,
         "name": "Car",
         "seat": 4,
-        "price": "55"
+        "price": "55",
+        "img": "https://i.ibb.co/QFvd146/Frame-2.png"
+
     },
     {
         "id" : 2,
         "name": "Car",
         "seat": 4,
-        "price": "58"
+        "price": "58",
+        "img": "https://i.ibb.co/QFvd146/Frame-2.png"
+
     },
     {
         "id" : 3,
+        "code": "B",
         "name": "Bus",
         "seat": 20,
         "price": "80",
@@ -48,16 +57,19 @@
         "id" : 3,
         "name": "Bus",
         "seat": 20,
-        "price": "85"
+        "price": "85",
+        "img": "https://i.ibb.co/D4gF8QK/Frame-1.png"
     },
     {
         "id" : 3,
         "name": "Bus",
         "seat": 20,
-        "price": "90"
+        "price": "90",
+        "img": "https://i.ibb.co/D4gF8QK/Frame-1.png"
     },
     {
         "id" : 4,
+        "code": "T",
         "name": "Train",
         "seat": 40,
         "price": "100",
@@ -67,13 +79,15 @@
         "id" : 4,
         "name": "Train",
         "seat": 40,
-        "price": "110"
+        "price": "110",
+        "img" : "https://i.ibb.co/hCXLrBN/Group.png"
     },
     {
         "id" : 4,
         "name": "Train",
         "seat": 40,
-        "price": "110"
+        "price": "110",
+        "img" : "https://i.ibb.co/hCXLrBN/Group.png"
     }
     
 ]

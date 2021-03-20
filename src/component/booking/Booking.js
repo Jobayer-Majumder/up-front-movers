@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import fakeData from '../../fakeData/data.json';
-import map from '../../images/Map.png';
 import { faDollarSign, faUserFriends } from '@fortawesome/free-solid-svg-icons';
+import Map from '../map/Map';
 
 
 
@@ -42,7 +42,7 @@ const Booking = () => {
                         </div>
                     </div>
                     <div className="col-md-8">
-                        <img src={map} alt=""/>
+                        <Map />
                     </div>
                 </div>
             </div>

@@ -1,11 +1,9 @@
 import React, { useContext, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faGoogle } from '@fortawesome/free-brands-svg-icons';
-import firebase from "firebase/app";
-import "firebase/auth";
 import { UserContext } from '../../App';
 import { useHistory, useLocation } from 'react-router';
-import { initializeLoginFramework, handleGoogleSignIn, handleSignOut, handleFbSignIn, createUserWithEmailAndPassword, signInWithEmailAndPassword } from './LoginManager';
+import { initializeLoginFramework, handleGoogleSignIn, createUserWithEmailAndPassword, signInWithEmailAndPassword } from './LoginManager';
 
 
 
@@ -43,7 +41,6 @@ const Login = () => {
             setUser(newUser)
         }
         setValidFormMessage(isFieldValid);
-        // console.log(user)
     };
 
     const history = useHistory();
@@ -58,21 +55,6 @@ const Login = () => {
         }
     }
 
-    // const handleCreateUser = e => {
-    //     if (newUser && user.email && user.password) {
-    //         firebase.auth().createUserWithEmailAndPassword(user.email, user.password)
-    //             .then((userCredential) => {
-    //                 const user = userCredential.user;
-    //                 console.log(user);
-    //                 handleResponse(user, true);
-    //             })
-    //             .catch((error) => {
-    //                 var errorMessage = error.message;
-    //                 console.log(errorMessage)
-    //             });
-    //         e.preventDefault();
-    //     }
-    // };
 
     const googleSignIn = () => {
         handleGoogleSignIn()
@@ -81,14 +63,6 @@ const Login = () => {
         })
     };
 
-    // const fbSignIn = () => {
-    //     handleFbSignIn()
-    //     .then(res => {
-    //       handleResponse(res, true);
-    //     })
-  
-    // };
-  
 
     const handleCreateUser = e => {
         if (newUser && user.email && user.password) {
@@ -109,25 +83,8 @@ const Login = () => {
           }
           e.preventDefault();
     };
-
-    // const handleLogin = e => {
-    //     if (!newUser && user.email && user.password) {
-    //         firebase.auth().signInWithEmailAndPassword(user.email, user.password)
-    //             .then((userCredential) => {
-    //                 var user = userCredential.user;
-    //                 handleResponse(user, true)
-    //             })
-    //             .catch((error) => {
-    //                 var errorMessage = error.message;
-    //                 console.log(errorMessage)
-    //             });
-    //         e.preventDefault();
-    //     }
-    // }
-
-
-
-
+    console.log(user)
+    console.log(loggedInUser)
     return (
         <div className="container mt-4">
             <div className="row justify-content-center">
@@ -139,7 +96,7 @@ const Login = () => {
                         }
                         <input onBlur={handleBlurEvent} className='form-control p-3 mb-3' type="email" name='email' placeholder='Email' required />
                         <input onBlur={handleBlurEvent} className='form-control p-3 mb-3' type="password" name='password' placeholder='Password' required />
-                        {/* <input className='form-control p-3' type="password" name='confirm-pass' placeholder='Confirm Password' /> */}
+                        
                         {
                             validFormMessage || <p className='text-danger text-center'>Password must be contain by tow digit</p>
                         }
