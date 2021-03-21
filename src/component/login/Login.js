@@ -99,7 +99,7 @@ const Login = () => {
                         <input onBlur={handleBlurEvent} className='form-control p-3 mb-3' type="password" name='password' placeholder='Password' required />
                         
                         {
-                            validFormMessage || <p className='text-danger text-center'>Password must be contain by tow digit</p>
+                            validFormMessage || <p className='text-danger text-center'>Password must be contain by tow digit ! <br/> And at least 8 Character</p>
                         }
                         <div className='text-center pt-3'>
                             {

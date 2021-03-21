@@ -11,6 +11,9 @@ import Booking from './component/booking/Booking';
 import Login from './component/login/Login';
 import { createContext, useState } from 'react';
 import PrivateRoute from './component/privateRoute/PrivateRoute';
+import NotFound from './component/notFound/NotFound';
+import Blog from './component/blog/Blog';
+import Contact from './component/contact/Contact';
 
 export const UserContext = createContext();
 
@@ -31,8 +34,17 @@ function App() {
           <Route path='/login'>
              <Login /> 
           </Route>
+          <Route path='/contact'>
+             <Contact /> 
+          </Route>
+          <Route path='/blog'>
+             <Blog /> 
+          </Route>
           <Route exact path='/'>
             <Home />
+          </Route>
+          <Route path='*'>
+            <NotFound />
           </Route>
         </Switch>
       </Router>
